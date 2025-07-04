@@ -6,7 +6,6 @@ A console-based Tic Tac Toe game implemented in Java where you can play against 
 
 - **Single Player vs Computer**: Play against an AI opponent
 - **Multiple Game Modes**: Choose to play 1 or 3 rounds
-- **Time Limit**: 10-second time limit for each player move
 - **Score Tracking**: Keeps track of wins across multiple rounds
 - **Input Validation**: Robust error handling for invalid inputs
 - **Replay Option**: Option to play multiple games in succession
@@ -44,8 +43,7 @@ A console-based Tic Tac Toe game implemented in Java where you can play against 
    ```
 
 2. On your turn, enter a number (1-9) corresponding to where you want to place your 'X'
-3. You have 10 seconds to make each move - if you don't move in time, you forfeit your turn
-4. The computer will automatically make its move after you
+3. The computer will automatically make its move after you
 
 ### Winning
 - Get three of your symbols ('X') in a row horizontally, vertically, or diagonally
@@ -60,9 +58,8 @@ A console-based Tic Tac Toe game implemented in Java where you can play against 
 
 1. **Turn Order**: Player always goes first
 2. **Valid Moves**: You can only place your mark in empty positions
-3. **Time Limit**: Each player move has a 10-second time limit
-4. **Win Condition**: Three symbols in a row (horizontal, vertical, or diagonal)
-5. **Draw Condition**: Board is full with no winner
+3. **Win Condition**: Three symbols in a row (horizontal, vertical, or diagonal)
+4. **Draw Condition**: Board is full with no winner
 
 ## Example Gameplay
 
@@ -103,7 +100,6 @@ The game includes comprehensive error handling for:
 - Invalid input types (non-numeric input)
 - Out-of-range positions (not 1-9)
 - Already occupied positions
-- Time limit violations
 
 ## Technical Details
 
@@ -111,7 +107,6 @@ The game includes comprehensive error handling for:
 - **Board Representation**: 3x3 character array
 - **AI Strategy**: Random move selection
 - **Input Handling**: Scanner with InputMismatchException handling
-- **Time Management**: System.currentTimeMillis() for move timing
 
 ## Code Structure
 
