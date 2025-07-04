@@ -125,7 +125,7 @@ public class Main {
 
 
         while (!valid) {
-            System.out.print("Choose a position (1-9) [You have 10 seconds]: ");
+            System.out.print("Choose a position (1-9): ");
 
             try {
 
