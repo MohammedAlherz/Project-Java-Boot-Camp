@@ -123,23 +123,11 @@ public class Main {
         boolean valid = false;
         char symbol = 'X';
 
-        long startTime = System.currentTimeMillis();
-        long allowedTime = 10000; // 10 seconds
-
         while (!valid) {
-            System.out.print("Choose a position (1-9) [You have 10 seconds]: ");
+            System.out.print("Choose a position (1-9): ");
 
             try {
-                while (!scanner.hasNextInt()) {
-                    long now = System.currentTimeMillis();
-                    if (now - startTime > allowedTime) {
-                        System.out.println("\n⏰ Time's up! You missed your turn.");
-                        return;
-                    }
-                }
-
                 position = scanner.nextInt();
-
                 if (position < 1 || position > 9) {
                     System.out.println("Please choose a number between 1 and 9.");
                     continue;
