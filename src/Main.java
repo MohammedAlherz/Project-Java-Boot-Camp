@@ -123,11 +123,15 @@ public class Main {
         boolean valid = false;
         char symbol = 'X';
 
+
         while (!valid) {
-            System.out.print("Choose a position (1-9): ");
+            System.out.print("Choose a position (1-9) [You have 10 seconds]: ");
 
             try {
+
+
                 position = scanner.nextInt();
+
                 if (position < 1 || position > 9) {
                     System.out.println("Please choose a number between 1 and 9.");
                     continue;
